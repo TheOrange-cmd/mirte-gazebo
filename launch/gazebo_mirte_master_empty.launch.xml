@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!--  gazebo_mirte_master_empty.launch.xml -->
 <launch>
 
   <!-- MIRTE master specific arguments -->
@@ -32,6 +33,10 @@
     <arg name="roll" value="$(var spawn_roll)"/>
     <arg name="pitch" value="$(var spawn_pitch)"/>
     <arg name="yaw" value="$(var spawn_yaw)"/>
+    <arg name="arm_enable" value="$(var arm_enable)"/>
+    <arg name="sonar_enable" value="$(var sonar_enable)"/>
+    <arg name="lidar_enable" value="$(var lidar_enable)"/>
+    <arg name="depth_camera_enable" value="$(var depth_camera_enable)"/>
   </include>
 
   <!-- And start the ROS2 controller for the arm -->
