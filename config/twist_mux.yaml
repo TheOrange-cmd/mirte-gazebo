@@ -1,6 +1,10 @@
 twist_mux:
   ros__parameters:
     topics:
+      navigation:
+        topic: /cmd_vel_nav
+        timeout: 0.5
+        priority: 250
       gazebo:
         topic: /mirte_base_controller/cmd_vel_unstamped
         timeout: 0.25
